@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<board schema_version="2.2" vendor="microphase.cn" name="z7_lite_z7020" display_name="MicroPhase Z7 Lite (z7020)" url="http://www.microphase.cn" preset_file="preset.xml">
+    <images>
+        <image name="z7-Lite_board.png" display_name="MicroPhase Z7 Lite (Z7020)" sub_type="board">
+            <description>Microphase Z7-Lite Development board (Z7020 Version)</description>
+        </image>
+    </images>
+    <compatible_board_revisions>
+        <revision id="0">Rev 1</revision>
+    </compatible_board_revisions>
+    <file_version>1.0</file_version>
+    <description>The Z7-Lite is a development board from MicroPhase Technology. This board features 512MB DDR3 memory, 128MB QSPI Flash memory, 10/100MBit Ethernet and speed grade -2 Zynq 7020.</description>
+    <components>
+        <!-- FPGA part -->
+        <component name="part0" display_name="Z7-Lite" type="fpga" part_name="xc7z020clg400-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.xilinx.com">
+            <!-- Associated FPGA interfaces and IP cores -->
+            <interfaces>
+                <!-- Zynq 7000 processing system -->
+                <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset">
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="processing_system7" order="0"/>
+                    </preferred_ips>
+                </interface>
+
+                <!-- User LEDs: Red and Green (LED6) -->
+                <interface mode="master" name="leds_2bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="leds_2bits" preset_proc="LED_2BIT_preset">
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_O" physical_port="leds_2bits_tri_o" dir="out" left="1" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="PL_LED1"/>
+                                <pin_map port_index="1" component_pin="PL_LED2"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+
+                <!-- User Buttons: -->
+                <interface mode="master" name="btns_2bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_2bits" preset_proc="BTN_2BIT_preset">
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_I" physical_port="btns_2bits_tri_i" dir="in" left="1" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="PL_KEY1"/>
+                                <pin_map port_index="1" component_pin="PL_KEY2"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+
+                <!-- GPIO_1P -->
+                <interface mode="master" name="GPIO1" type="xilinx.com:interface:gpio_rtl:1.0" of_component="GPIO1" preset_proc="GPIO1_preset">
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_O" physical_port="GPIO_1P_tri_o" dir="inout" left="16" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="GPIO1_0P"/>
+                                <pin_map port_index="1" component_pin="GPIO1_1P"/>
+                                <pin_map port_index="2" component_pin="GPIO1_2P"/>
+                                <pin_map port_index="3" component_pin="GPIO1_3P"/>
+                                <pin_map port_index="4" component_pin="GPIO1_4P"/>
+                                <pin_map port_index="5" component_pin="GPIO1_5P"/>
+                                <pin_map port_index="6" component_pin="GPIO1_6P"/>
+                                <pin_map port_index="7" component_pin="GPIO1_7P"/>
+                                <pin_map port_index="8" component_pin="GPIO1_8P"/>
+                                <pin_map port_index="9" component_pin="GPIO1_9P"/>
+                                <pin_map port_index="10" component_pin="GPIO1_10P"/>
+                                <pin_map port_index="11" component_pin="GPIO1_11P"/>
+                                <pin_map port_index="12" component_pin="GPIO1_12P"/>
+                                <pin_map port_index="13" component_pin="GPIO1_13P"/>
+                                <pin_map port_index="14" component_pin="GPIO1_14P"/>
+                                <pin_map port_index="15" component_pin="GPIO1_15P"/>
+                                <pin_map port_index="16" component_pin="GPIO1_16P"/>
+                            </pin_maps>
+                        </port_map>
+                        <port_map logical_port="TRI_I" physical_port="GPIO_1P_tri_i" dir="inout" left="16" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="GPIO1_0N"/>
+                                <pin_map port_index="1" component_pin="GPIO1_1N"/>
+                                <pin_map port_index="2" component_pin="GPIO1_2N"/>
+                                <pin_map port_index="3" component_pin="GPIO1_3N"/>
+                                <pin_map port_index="4" component_pin="GPIO1_4N"/>
+                                <pin_map port_index="5" component_pin="GPIO1_5N"/>
+                                <pin_map port_index="6" component_pin="GPIO1_6N"/>
+                                <pin_map port_index="7" component_pin="GPIO1_7N"/>
+                                <pin_map port_index="8" component_pin="GPIO1_8N"/>
+                                <pin_map port_index="9" component_pin="GPIO1_9N"/>
+                                <pin_map port_index="10" component_pin="GPIO1_10N"/>
+                                <pin_map port_index="11" component_pin="GPIO1_11N"/>
+                                <pin_map port_index="12" component_pin="GPIO1_12N"/>
+                                <pin_map port_index="13" component_pin="GPIO1_13N"/>
+                                <pin_map port_index="14" component_pin="GPIO1_14N"/>
+                                <pin_map port_index="15" component_pin="GPIO1_15N"/>
+                                <pin_map port_index="16" component_pin="GPIO1_16N"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+
+                <!-- GPIO_2P -->
+                <interface mode="master" name="GPIO2" type="xilinx.com:interface:gpio_rtl:1.0" of_component="GPIO2" preset_proc="GPIO2_preset">
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_O" physical_port="GPIO_2P_tri_o" dir="inout" left="16" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="GPIO2_0P"/>
+                                <pin_map port_index="1" component_pin="GPIO2_1P"/>
+                                <pin_map port_index="2" component_pin="GPIO2_2P"/>
+                                <pin_map port_index="3" component_pin="GPIO2_3P"/>
+                                <pin_map port_index="4" component_pin="GPIO2_4P"/>
+                                <pin_map port_index="5" component_pin="GPIO2_5P"/>
+                                <pin_map port_index="6" component_pin="GPIO2_6P"/>
+                                <pin_map port_index="7" component_pin="GPIO2_7P"/>
+                                <pin_map port_index="8" component_pin="GPIO2_8P"/>
+                                <pin_map port_index="9" component_pin="GPIO2_9P"/>
+                                <pin_map port_index="10" component_pin="GPIO2_10P"/>
+                                <pin_map port_index="11" component_pin="GPIO2_11P"/>
+                                <pin_map port_index="12" component_pin="GPIO2_12P"/>
+                                <pin_map port_index="13" component_pin="GPIO2_13P"/>
+                                <pin_map port_index="14" component_pin="GPIO2_14P"/>
+                                <pin_map port_index="15" component_pin="GPIO2_15P"/>
+                                <pin_map port_index="16" component_pin="GPIO2_16P"/>
+                            </pin_maps>
+                        </port_map>
+                        <port_map logical_port="TRI_I" physical_port="GPIO_2P_tri_i" dir="inout" left="16" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="GPIO2_0N"/>
+                                <pin_map port_index="1" component_pin="GPIO2_1N"/>
+                                <pin_map port_index="2" component_pin="GPIO2_2N"/>
+                                <pin_map port_index="3" component_pin="GPIO2_3N"/>
+                                <pin_map port_index="4" component_pin="GPIO2_4N"/>
+                                <pin_map port_index="5" component_pin="GPIO2_5N"/>
+                                <pin_map port_index="6" component_pin="GPIO2_6N"/>
+                                <pin_map port_index="7" component_pin="GPIO2_7N"/>
+                                <pin_map port_index="8" component_pin="GPIO2_8N"/>
+                                <pin_map port_index="9" component_pin="GPIO2_9N"/>
+                                <pin_map port_index="10" component_pin="GPIO2_10N"/>
+                                <pin_map port_index="11" component_pin="GPIO2_11N"/>
+                                <pin_map port_index="12" component_pin="GPIO2_12N"/>
+                                <pin_map port_index="13" component_pin="GPIO2_13N"/>
+                                <pin_map port_index="14" component_pin="GPIO2_14N"/>
+                                <pin_map port_index="15" component_pin="GPIO2_15N"/>
+                                <pin_map port_index="16" component_pin="GPIO2_16N"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+            </interfaces>
+        </component>
+        <!-- Zynq 7000 processing system -->
+        <component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+        <!-- User LEDs: Red and Green (LED6) -->
+        <component name="leds_2bits" display_name="LEDs" type="chip" sub_type="led" major_group="General Purpose Input or Output">
+            <description>LEDs, Active Low</description>
+        </component>
+        <!-- User Buttons: -->
+        <component name="btns_2bits" display_name="BTNs" type="chip" sub_type="push_button" major_group="General Purpose Input or Output">
+            <description>Buttons, Active Low</description>
+        </component>
+        <!-- HDMI -->
+        <component name="hdmi" display_name="HDMI" type="chip" sub_type="lcd" major_group="High-Definition Multimedia Interface">
+            <description>HDMI interface, Active High</description>
+        </component>
+        <!-- Ethernet -->
+        <component name="ethernet" display_name="Ethernet" type="chip" sub_type="ethernet" major_group="Ethernet Interface">
+            <description>Ethernet interface, Active High</description>
+        </component>
+        <!-- GPIO1 -->
+        <component name="GPIO1" display_name="GPIO1" type="chip" sub_type="pmod" major_group="General Purpose Input or Output">
+            <description>General Purpose IO 1 Positive</description>
+        </component>
+        <!-- GPIO2 -->
+        <component name="GPIO2" display_name="GPIO2" type="chip" sub_type="pmod" major_group="General Purpose Input or Output">
+            <description>General Purpose IO 2 Positive</description>
+        </component>
+
+    </components>
+    <jtag_chains>
+        <jtag_chain name="chain1">
+            <position name="0" component="part0"/>
+        </jtag_chain>
+    </jtag_chains>
+</board>
