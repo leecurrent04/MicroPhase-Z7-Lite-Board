@@ -13,7 +13,6 @@ The FPGA study with MicroPhase Z7-Lite.
     [Vivado path]/[version]/data/board/
     ```
     <br>
-    <br>
 
 2. In Vivado, navigate to [Tools] -> [Settings] -> [Vivado Store] -> [Board Repository]. Then, add the specified path.
 <br><br>

@@ -42,6 +42,7 @@ So it always input `LOW`.<br>
 |  W14  |  H16  |  SW_B1   |
 |  W15  |  L20  |  SW_B2   |
 |  W16  |  G20  |  SW_B3   |
+
 <br><br>
 
 ## Example with components
