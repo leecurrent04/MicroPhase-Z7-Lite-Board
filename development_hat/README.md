@@ -12,36 +12,27 @@ When using the board at JP1, switch A1 doesn't work. This is because the U13 I/O
 $$V_{high} = \frac{1kΩ}{1kΩ+10kΩ} \cdot 3.3V = 0.3V < 2.65V$$
 So it always input `LOW`.<br>
 
-|  JP1  |  JP2  | Function |
-| :---: | :---: | :------: |
-|  V12  |  K16  |   LED0   |
-|  V13  |  J19  |   LED1   |
-|  V15  |  L19  |   LED2   |
-|  V16  |  G19  |   LED3   |
-|  V17  |  E17  |   LED4   |
-|  V18  |  D18  |   LED5   |
-|       |       |          |
-|  Y14  |  H17  | PUSH_SW0 |
-|  P14  |  F19  | PUSH_SW1 |
-|       |       |          |
-|  T14  |  C20  |  SEG_A   |
-|  T15  |  B20  |  SEG_B   |
-|  T17  |  J18  |  SEG_C   |
-|  T10  |  G18  |  SEG_D   |
-|  R14  |  F20  |  SEG_DP  |
-|  T11  |  G17  |  SEG_E   |
-|  T12  |  J20  |  SEG_F   |
-|  R18  |  H18  |  SEG_G   |
-|       |       |          |
-|  U12  |  H20  |  SW_A0   |
-|  U13  |  K19  |  SW_A1   |
-|  U14  |  M19  |  SW_A2   |
-|  U15  |  M20  |  SW_A3   |
-|       |       |          |
-|  W13  |  J16  |  SW_B0   |
-|  W14  |  H16  |  SW_B1   |
-|  W15  |  L20  |  SW_B2   |
-|  W16  |  G20  |  SW_B3   |
+|  JP1  |  JP2  | Function |  JP1  |  JP2  | Function |
+| :---: | :---: | :------: | :---: | :---: | :------: |
+|  V12  |  K16  |   LED0   |  T14  |  C20  |  SEG_A   |
+|  V13  |  J19  |   LED1   |  T15  |  B20  |  SEG_B   |
+|  V15  |  L19  |   LED2   |  T17  |  J18  |  SEG_C   |
+|  V16  |  G19  |   LED3   |  T10  |  G18  |  SEG_D   |
+|  V17  |  E17  |   LED4   |  R14  |  F20  |  SEG_DP  |
+|  V18  |  D18  |   LED5   |  T11  |  G17  |  SEG_E   |
+|       |       |          |  T12  |  J20  |  SEG_F   |
+|       |       |          |  R18  |  H18  |  SEG_G   |
+|       |       |          |       |       |          |
+|  U12  |  H20  |  SW_A0   |  W13  |  J16  |  SW_B0   |
+|  U13  |  K19  |  SW_A1   |  W14  |  H16  |  SW_B1   |
+|  U14  |  M19  |  SW_A2   |  W15  |  L20  |  SW_B2   |
+|  U15  |  M20  |  SW_A3   |  W16  |  G20  |  SW_B3   |
+|       |       |          |       |       |          |
+|  Y14  |  H17  | PUSH_SW0 |  P14  |  F19  | PUSH_SW1 |
+
+<br>
+
+![JP2 Pin Map](./JP2_PIN.png)
 
 <br><br>
 
