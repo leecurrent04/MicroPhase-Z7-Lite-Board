@@ -5,9 +5,11 @@
 The FPGA study with MicroPhase Z7-Lite.
 <br><br>
 
-## Board Files Install
+## Setup
 
-1. Download git source and Copy the `board_files` directory to the following path in your Vivado installation: 
+### Board Files Install
+
+(option) 1. Download git source and Copy the `board_files` directory to the following path in your Vivado installation: 
 
     ```
     [Vivado path]/[version]/data/board/
@@ -17,11 +19,20 @@ The FPGA study with MicroPhase Z7-Lite.
 2. In Vivado, navigate to [Tools] -> [Settings] -> [Vivado Store] -> [Board Repository]. Then, add the specified path.
 <br><br>
 
-## Development HAT
+## Examples
+
+[[Github] example](https://github.com/leecurrent04/MicroPhase-Z7-Lite-Board/tree/main/example)
+
+- 0_test
+- 1_logic_gate : Basic gates, and, or, not, xor
+- 2_adder : 1 Bit full adder
+- 3_7segment : 7-Segment Display
+
+## Appendix
+
+### A. Development HAT
 
 ![PCB IMG](./development_hat/development_hat.png)
 
 Please refer to [the following for information on PCB design.](https://github.com/leecurrent04/MicroPhase-Z7-Lite-Board/tree/main/development_hat)
 <br><br>
-
-## Examples
