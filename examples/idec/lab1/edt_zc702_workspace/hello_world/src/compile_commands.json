@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/lab1/edt_zc702_workspace/hello_world/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\hello_world.elf.dir\\helloworld.c.obj -c C:\\lab1\\edt_zc702_workspace\\hello_world\\src\\helloworld.c",
+  "file": "C:\\lab1\\edt_zc702_workspace\\hello_world\\src\\helloworld.c"
+},
+{
+  "directory": "C:/lab1/edt_zc702_workspace/hello_world/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem C:/Xilinx/Vitis/2024.2/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/lab1/edt_zc702_workspace/zc702_edt/export/zc702_edt/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\hello_world.elf.dir\\platform.c.obj -c C:\\lab1\\edt_zc702_workspace\\hello_world\\src\\platform.c",
+  "file": "C:\\lab1\\edt_zc702_workspace\\hello_world\\src\\platform.c"
+}
+]

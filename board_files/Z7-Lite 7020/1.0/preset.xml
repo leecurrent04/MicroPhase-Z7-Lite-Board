@@ -61,7 +61,7 @@
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_MEMORY_TYPE" value="DDR 3"/>
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_PARTNO" value="MT41K256M16 RE-125"/>
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DEVICE_CAPACITY" value="4096 MBits"/>
-                <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BUS_WIDTH" value="32 Bit" />
+                <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BUS_WIDTH" value="16 Bit" />
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BL" value="8" />
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_FAW" value="40.0"/>
                 <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RC" value="48.75"/>
