@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 26 14:08:06 2025
+# Process ID         : 22428
+# Current directory  : C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1
+# Command line       : vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file           : C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/system_wrapper.vds
+# Journal file       : C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1\vivado.jou
+# Running On         : WOO-DESKTOP
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5600G with Radeon Graphics         
+# CPU Frequency      : 3893 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 29939 MB
+# Swap memory        : 4563 MB
+# Total Virtual      : 34502 MB
+# Available Virtual  : 15799 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_processing_system7_0_1
+
+Command: synth_design -top system_wrapper -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9764
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1195.598 ; gain = 465.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_1' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2323]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2323]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:123980]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:123980]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_1' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/synth/system_processing_system7_0_1.v:53]
+WARNING: [Synth 8-7071] port 'ENET0_GMII_TX_EN' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'ENET0_GMII_TX_ER' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'ENET0_MDIO_MDC' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'ENET0_MDIO_O' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'ENET0_MDIO_T' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'ENET0_GMII_TXD' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARVALID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWVALID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_BREADY' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_RREADY' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WLAST' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WVALID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WID' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARBURST' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLOCK' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARSIZE' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWBURST' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLOCK' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWSIZE' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARPROT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWPROT' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARADDR' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWADDR' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WDATA' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARCACHE' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLEN' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARQOS' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWCACHE' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLEN' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWQOS' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WSTRB' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7071] port 'FCLK_RESET0_N' of module 'system_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'system_processing_system7_0_1' has 85 connections declared, but only 46 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (0#1) [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1309.750 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc] for cell 'system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1309.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1309.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/processing_system7_0/inst. (constraint file  C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/processing_system7_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.750 ; gain = 579.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1316.984 ; gain = 586.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1635.438 ; gain = 905.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1655.504 ; gain = 925.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1658.211 ; gain = 927.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     1|
+|3     |LUT1  |    24|
+|4     |PS7   |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1874.172 ; gain = 1143.824
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1874.172 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4b28558b
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 156 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1886.918 ; gain = 1388.746
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1886.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab1/edt_zc702/edt_zc702.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 26 14:08:54 2025...

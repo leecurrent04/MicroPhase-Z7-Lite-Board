@@ -1,0 +1,4 @@
+domain_path: C:\lab1\MicroPhase-Z7-Lite-Board\examples\idec\lab2\edt_zc702_workspace\edt_zc702\zynq_fsbl\zynq_fsbl_bsp
+app_src_dir: C:\Xilinx\Vitis\2024.2\data\embeddedsw\lib\sw_apps\zynq_fsbl
+template: zynq_fsbl
+lang: c
