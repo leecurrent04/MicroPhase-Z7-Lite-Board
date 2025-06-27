@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\lab1\MicroPhase-Z7-Lite-Board\examples\idec\lab2\edt_zc702_workspace\edt_zc702\zynq_fsbl\build\fsbl.elf
+	C:\lab1\MicroPhase-Z7-Lite-Board\examples\idec\lab2\edt_zc702_workspace\hello_pl\_ide\bitstream\system_wrapper.bit
+	C:\lab1\MicroPhase-Z7-Lite-Board\examples\idec\lab2\edt_zc702_workspace\hello_pl\build\hello_pl.elf
+}

@@ -51,4 +51,15 @@ PS에서 AXI를 이용하여 PL의 버튼이나 LED 제어하기
 
 ## Vitis
 
+Vitis 업데이트 되면서 기존 C 코드로 동작을 안함.
 
+[[Github] Xilinx embeddedsw - xgpiops example](https://github.com/Xilinx/embeddedsw/tree/master/XilinxProcessorIPLib/drivers/gpiops/examples)
+
+
+### how to create boot image for SD Card
+
+Boot image partitions
+
+1. fsbl.elf (../`{Workspace}`/export/`{Workspace}`/sw/boot/)
+2. wrapper.bit (./ide/bitstream/)
+3. application.elf (./Debug/)

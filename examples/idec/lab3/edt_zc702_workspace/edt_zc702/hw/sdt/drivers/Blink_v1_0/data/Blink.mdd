@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER Blink
+	OPTION supported_peripherals = (Blink);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = Blink;
+END DRIVER

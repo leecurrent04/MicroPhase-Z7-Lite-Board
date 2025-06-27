@@ -1,0 +1,43 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		firmware-name = "system_wrapper.bit.bin";
+		clocking0: clocking0 {
+			compatible = "xlnx,fclk";
+			assigned-clocks = <&clkc 15>;
+			assigned-clock-rates = <100000000>;
+			#clock-cells = <0>;
+			clock-output-names = "fabric_clk";
+			clocks = <&clkc 15>;
+		};
+		afi0: afi0@f8008000 {
+			status = "okay";
+			compatible = "xlnx,afi-fpga";
+			#address-cells = <1>;
+			reg = <0xF8008000 0x1000>;
+			#size-cells = <0>;
+			xlnx,afi-width = <0>;
+		};
+		axi_master_pl_0: axi_master_pl@43c00000 {
+			compatible = "xlnx,axi-master-pl-1.0";
+			xlnx,ii = "x";
+			xlnx,machine = <64>;
+			xlnx,rable = <0>;
+			xlnx,s-axi-axilites-data-width = <32>;
+			xlnx,ip-name = "axi_master_pl";
+			reg = <0x43c00000 0x10000>;
+			clocks = <&clkc 15>;
+			xlnx,clk-period = <10>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			status = "okay";
+			clock-names = "ap_clk";
+			xlnx,s-axi-axilites-addr-width = <6>;
+			xlnx,combinational = <0>;
+			xlnx,latency = <2>;
+			xlnx,name = "axi_master_pl_0";
+		};
+	};
+};

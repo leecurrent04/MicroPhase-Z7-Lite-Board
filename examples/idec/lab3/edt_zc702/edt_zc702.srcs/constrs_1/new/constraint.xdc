@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN K16 [get_ports {leds_0[0]}]
+set_property PACKAGE_PIN J19 [get_ports {leds_0[1]}]
+set_property PACKAGE_PIN L19 [get_ports {leds_0[2]}]
+set_property PACKAGE_PIN G19 [get_ports {leds_0[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_0[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_0[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_0[0]}]

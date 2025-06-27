@@ -1,0 +1,266 @@
+
+*** Running vivado
+    with args -log system_Blink_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_Blink_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jun 27 14:18:41 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_Blink_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 479.895 ; gain = 145.621
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/ip_repo/Blink_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_Blink_0_0
+Command: synth_design -top system_Blink_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14752
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1192.297 ; gain = 467.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_Blink_0_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_Blink_0_0/synth/system_Blink_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Blink' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Blink_slave_lite_v1_0_S00_AXI' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v:148]
+INFO: [Synth 8-226] default block is never used [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v:222]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'Blink_slave_lite_v1_0_S00_AXI' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Blink' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/db34/hdl/Blink.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_Blink_0_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_Blink_0_0/synth/system_Blink_0_0.v:53]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module Blink_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1306.777 ; gain = 581.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1306.777 ; gain = 581.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1306.777 ; gain = 581.539
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1306.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1360.359 ; gain = 1.527
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.359 ; gain = 635.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.359 ; gain = 635.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.359 ; gain = 635.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'Blink_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'Blink_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'Blink_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'Blink_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1360.359 ; gain = 635.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module system_Blink_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module system_Blink_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module system_Blink_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module system_Blink_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module system_Blink_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module system_Blink_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1360.359 ; gain = 635.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1493.375 ; gain = 768.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1493.523 ; gain = 768.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1504.180 ; gain = 778.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     7|
+|2     |LUT1   |     2|
+|3     |LUT2   |     2|
+|4     |LUT3   |     3|
+|5     |LUT5   |     5|
+|6     |LUT6   |    61|
+|7     |FDRE   |   169|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1719.367 ; gain = 940.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1719.367 ; gain = 994.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1728.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1732.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 33e25105
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1732.203 ; gain = 1231.582
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1732.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_Blink_0_0_synth_1/system_Blink_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_Blink_0_0, cache-ID = 313627dac1f2d5d4
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1732.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_Blink_0_0_synth_1/system_Blink_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_Blink_0_0_utilization_synth.rpt -pb system_Blink_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 14:19:36 2025...

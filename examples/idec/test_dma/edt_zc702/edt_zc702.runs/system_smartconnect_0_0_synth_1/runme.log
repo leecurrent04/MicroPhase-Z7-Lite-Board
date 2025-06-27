@@ -1,0 +1,1046 @@
+
+*** Running vivado
+    with args -log system_smartconnect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_smartconnect_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jun 27 11:31:35 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_smartconnect_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.316 ; gain = 148.441
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/resource/xilinx_com_hls_axi_master_pl_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_smartconnect_0_0
+Command: synth_design -top system_smartconnect_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16536
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.176 ; gain = 466.613
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:94]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:94]
+INFO: [Synth 8-6157] synthesizing module 'system_smartconnect_0_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/synth/system_smartconnect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1ESA9AA' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:924]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_one_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_919a_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_one_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_919a_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_919a_psr_aclk_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'bd_919a_psr_aclk_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_919a_psr_aclk_0' has 10 connections declared, but only 6 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1ESA9AA' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:924]
+WARNING: [Synth 8-7071] port 'S01_ACLK' of module 'clk_map_imp_1ESA9AA' is unconnected for instance 'clk_map' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+WARNING: [Synth 8-7071] port 'S01_ARESETN' of module 'clk_map_imp_1ESA9AA' is unconnected for instance 'clk_map' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+WARNING: [Synth 8-7023] instance 'clk_map' of module 'clk_map_imp_1ESA9AA' has 11 connections declared, but only 9 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_M3NP7D' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1222]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00e_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_919a_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00e_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_919a_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_M3NP7D' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1222]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_8RDJLH' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1464]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00arn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_919a_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00arn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_919a_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00awn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_919a_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00awn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_919a_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00bn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_919a_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00bn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_919a_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00rn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_919a_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00rn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_919a_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00wn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_919a_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00wn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_919a_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_8RDJLH' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1464]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00s2a_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_919a_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00s2a_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_919a_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00a2s_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_919a_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00a2s_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_919a_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1KR8Y8Q' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1706]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00mmu_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_919a_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00mmu_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_919a_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00sic_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_919a_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00sic_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_919a_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00tr_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_919a_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00tr_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_919a_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1KR8Y8Q' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1706]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1O9PSU8' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2282]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sarn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_919a_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sarn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_919a_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sawn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_919a_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sawn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_919a_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sbn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_919a_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sbn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_919a_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_srn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_919a_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_srn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_919a_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_swn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_919a_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_swn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_919a_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1O9PSU8' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2282]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1DLISLW' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2524]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_arinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_arinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_aroutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_919a_aroutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_aroutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_919a_aroutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awoutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_919a_awoutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awoutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_919a_awoutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_binsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_binsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_boutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_919a_boutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_boutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_919a_boutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_WZNN8S' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:971]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_arni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_919a_arni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_arni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_919a_arni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_919a_awni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_919a_awni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_bni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_919a_bni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_bni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_919a_bni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_rni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_919a_rni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_rni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_919a_rni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_wni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_919a_wni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_wni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_919a_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_WZNN8S' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:971]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_rinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_rinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_routsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_919a_routsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_routsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_919a_routsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_winsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_winsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_woutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_919a_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_woutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_919a_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1DLISLW' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2524]
+WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1DLISLW' has 79 connections declared, but only 68 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'system_smartconnect_0_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/synth/system_smartconnect_0_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1ESA9AA does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:944]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+WARNING: [Synth 8-3848] Net S01_AXI_arready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:181]
+WARNING: [Synth 8-3848] Net S01_AXI_awready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:194]
+WARNING: [Synth 8-3848] Net S01_AXI_bid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:199]
+WARNING: [Synth 8-3848] Net S01_AXI_bresp in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:201]
+WARNING: [Synth 8-3848] Net S01_AXI_buser in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:202]
+WARNING: [Synth 8-3848] Net S01_AXI_bvalid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:203]
+WARNING: [Synth 8-3848] Net S01_AXI_rdata in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:204]
+WARNING: [Synth 8-3848] Net S01_AXI_rid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:205]
+WARNING: [Synth 8-3848] Net S01_AXI_rlast in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:206]
+WARNING: [Synth 8-3848] Net S01_AXI_rresp in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:208]
+WARNING: [Synth 8-3848] Net S01_AXI_ruser in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:209]
+WARNING: [Synth 8-3848] Net S01_AXI_rvalid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:210]
+WARNING: [Synth 8-3848] Net S01_AXI_wready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:214]
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_8_top__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_8_top__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slow_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fast_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_fi_regulator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_17_top__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_17_top__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+*** Running vivado
+    with args -log system_smartconnect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_smartconnect_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jun 27 11:32:36 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_smartconnect_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 479.828 ; gain = 146.676
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/resource/xilinx_com_hls_axi_master_pl_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_smartconnect_0_0
+Command: synth_design -top system_smartconnect_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12284
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1219.648 ; gain = 465.973
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:94]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:94]
+INFO: [Synth 8-6157] synthesizing module 'system_smartconnect_0_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/synth/system_smartconnect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1ESA9AA' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:924]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_one_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_919a_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_one_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_919a_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_919a_psr_aclk_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'bd_919a_psr_aclk_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_919a_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_919a_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_919a_psr_aclk_0' has 10 connections declared, but only 6 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:962]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1ESA9AA' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:924]
+WARNING: [Synth 8-7071] port 'S01_ACLK' of module 'clk_map_imp_1ESA9AA' is unconnected for instance 'clk_map' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+WARNING: [Synth 8-7071] port 'S01_ARESETN' of module 'clk_map_imp_1ESA9AA' is unconnected for instance 'clk_map' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+WARNING: [Synth 8-7023] instance 'clk_map' of module 'clk_map_imp_1ESA9AA' has 11 connections declared, but only 9 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:464]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_M3NP7D' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1222]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00e_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_919a_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00e_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_919a_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_M3NP7D' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1222]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_8RDJLH' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1464]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00arn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_919a_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00arn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_919a_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00awn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_919a_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00awn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_919a_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00bn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_919a_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00bn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_919a_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00rn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_919a_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00rn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_919a_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00wn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_919a_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00wn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_919a_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_8RDJLH' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1464]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_m00s2a_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_919a_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_m00s2a_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_919a_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00a2s_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_919a_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00a2s_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_919a_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1KR8Y8Q' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1706]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00mmu_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_919a_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00mmu_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_919a_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00sic_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_919a_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00sic_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_919a_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_s00tr_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_919a_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_s00tr_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_919a_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1KR8Y8Q' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:1706]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1O9PSU8' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2282]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sarn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_919a_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sarn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_919a_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sawn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_919a_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sawn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_919a_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_sbn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_919a_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_sbn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_919a_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_srn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_919a_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_srn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_919a_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_swn_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_919a_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_swn_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_919a_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1O9PSU8' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2282]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1DLISLW' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2524]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_arinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_arinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_919a_arinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_aroutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_919a_aroutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_aroutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_919a_aroutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_919a_awinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awoutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_919a_awoutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awoutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_919a_awoutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_binsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_binsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_919a_binsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_boutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_919a_boutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_boutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_919a_boutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_WZNN8S' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:971]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_arni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_919a_arni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_arni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_919a_arni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_awni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_919a_awni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_awni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_919a_awni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_bni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_919a_bni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_bni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_919a_bni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_rni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_919a_rni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_rni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_919a_rni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_wni_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_919a_wni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_wni_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_919a_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_WZNN8S' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:971]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_rinsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_rinsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_919a_rinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_routsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_919a_routsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_routsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_919a_routsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_winsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_winsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_919a_winsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_919a_woutsw_0' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_919a_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a_woutsw_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_919a_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1DLISLW' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:2524]
+WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_1DLISLW' is unconnected for instance 'switchboards' [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1DLISLW' has 79 connections declared, but only 68 given [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:853]
+INFO: [Synth 8-6155] done synthesizing module 'bd_919a' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'system_smartconnect_0_0' (0#1) [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/synth/system_smartconnect_0_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1ESA9AA does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:944]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+WARNING: [Synth 8-3848] Net S01_AXI_arready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:181]
+WARNING: [Synth 8-3848] Net S01_AXI_awready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:194]
+WARNING: [Synth 8-3848] Net S01_AXI_bid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:199]
+WARNING: [Synth 8-3848] Net S01_AXI_bresp in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:201]
+WARNING: [Synth 8-3848] Net S01_AXI_buser in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:202]
+WARNING: [Synth 8-3848] Net S01_AXI_bvalid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:203]
+WARNING: [Synth 8-3848] Net S01_AXI_rdata in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:204]
+WARNING: [Synth 8-3848] Net S01_AXI_rid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:205]
+WARNING: [Synth 8-3848] Net S01_AXI_rlast in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:206]
+WARNING: [Synth 8-3848] Net S01_AXI_rresp in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:208]
+WARNING: [Synth 8-3848] Net S01_AXI_ruser in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:209]
+WARNING: [Synth 8-3848] Net S01_AXI_rvalid in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:210]
+WARNING: [Synth 8-3848] Net S01_AXI_wready in module/entity bd_919a does not have driver. [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/synth/bd_919a.v:214]
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_8_top__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_8_top__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_8_top__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slow_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fast_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_fi_regulator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_17_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_17_top__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_reg_slice3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_17_si_handler__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_17_top__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_17_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1461.816 ; gain = 708.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1461.816 ; gain = 708.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1461.816 ; gain = 708.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1461.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/bd_919a_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/bd_919a_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/bd_919a_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/bd_919a_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/bd_0/ip/ip_1/bd_919a_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_smartconnect_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_smartconnect_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/ip/system_smartconnect_0_0/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_smartconnect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_smartconnect_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_smartconnect_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_smartconnect_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 36 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1785.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.519 . Memory (MB): peak = 1811.148 ; gain = 25.344
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_smartconnect_0_0_synth_1/dont_touch.xdc, line 171).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_14_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_14_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_14_top'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_14_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 R_STALL |                               01 | 00000000000000000000000000000001
+               R_PENDING |                               10 | 00000000000000000000000000000010
+                R_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 4     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 29    
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 13    
+	   2 Input    2 Bit       Adders := 7     
+	   3 Input    1 Bit       Adders := 6     
+	   2 Input    1 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 80    
++---Registers : 
+	             2178 Bit    Registers := 12    
+	              512 Bit    Registers := 2     
+	              160 Bit    Registers := 2     
+	              104 Bit    Registers := 1     
+	               74 Bit    Registers := 1     
+	               72 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	               47 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 37    
+	                3 Bit    Registers := 56    
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 289   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 6     
+	   2 Input  512 Bit        Muxes := 2     
+	   2 Input  142 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   55 Bit        Muxes := 3     
+	   2 Input   54 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 21    
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 45    
+	   7 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 26    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 32    
+	   3 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 10    
+	   2 Input    3 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 59    
+	   4 Input    2 Bit        Muxes := 4     
+	   5 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 74    
+	   4 Input    1 Bit        Muxes := 17    
+	   7 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 217   
+	  12 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                                                                                      | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1811.148 ; gain = 1057.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 1831.629 ; gain = 1077.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                                                                                      | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1831.629 ; gain = 1077.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | shift_reg_reg | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     6|
+|2     |LUT1     |   118|
+|3     |LUT2     |    98|
+|4     |LUT3     |   263|
+|5     |LUT4     |   200|
+|6     |LUT5     |   176|
+|7     |LUT6     |   338|
+|8     |MUXF7    |     1|
+|9     |RAM16X1D |     1|
+|10    |SRL16    |     1|
+|11    |SRL16E   |    44|
+|12    |SRLC32E  |    70|
+|13    |FDCE     |   102|
+|14    |FDR      |     4|
+|15    |FDRE     |   893|
+|16    |FDSE     |    69|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4786 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 1972.863 ; gain = 869.855
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1972.863 ; gain = 1219.188
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1979.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1987.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDR => FDRE: 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 204781e
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:29 . Memory (MB): peak = 1987.652 ; gain = 1488.707
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1987.652 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_smartconnect_0_0_synth_1/system_smartconnect_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_smartconnect_0_0, cache-ID = 6a2883829d9ae9b1
+INFO: [Coretcl 2-1174] Renamed 294 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1987.652 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.runs/system_smartconnect_0_0_synth_1/system_smartconnect_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_smartconnect_0_0_utilization_synth.rpt -pb system_smartconnect_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 11:34:25 2025...

@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ipshared/db34/hdl/Blink_slave_lite_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Blink_slave_lite_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ipshared/db34/hdl/Blink.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Blink
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_Blink_0_0/sim/system_Blink_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_Blink_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_0/sim/bd_44e3_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_2/sim/bd_44e3_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_3/sim/bd_44e3_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_4/sim/bd_44e3_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_5/sim/bd_44e3_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_6/sim/bd_44e3_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_7/sim/bd_44e3_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_8/sim/bd_44e3_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_9/sim/bd_44e3_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_10/sim/bd_44e3_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/sim/bd_44e3_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/sim/bd_44e3_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/sim/bd_44e3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_44e3
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1LX95IS
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_B7U41B
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1BIQ3N0
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1GZQO6U
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/ip/system_axi_smc_0/sim/system_axi_smc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_axi_smc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.ip_user_files/bd/system/sim/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.gen/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/lab1/MicroPhase-Z7-Lite-Board/examples/idec/lab3/edt_zc702/edt_zc702.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
